@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainap" prefHeight="400.0" prefWidth="500.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tk.rubictron.chatclient.view.ui.controller.PrivateChatController">
+    <stylesheets>
+        <URL value="@/tk/rubictron/chatclient/view/ui/style/privatechat.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="15.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <JFXTextArea fx:id="txtaMessages" prefHeight="278.0" prefWidth="569.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" />
+            <AnchorPane layoutY="344.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <JFXTextField fx:id="txtfSendMessage" layoutY="2.0" prefHeight="24.0" prefWidth="385.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0" />
+                  <JFXButton fx:id="btnSend" layoutX="448.0" layoutY="13.0" minWidth="-Infinity" onAction="#abtnSend" prefWidth="60.0" style="-fx-background-color: ;" text="Send" textFill="#f5efef" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="70.0" />
+                  <JFXButton fx:id="btnExit" layoutX="499.0" layoutY="1.0" minWidth="-Infinity" onAction="#abtnExit" prefWidth="60.0" style="-fx-background-color: red;" text="Exit" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                  <JFXButton fx:id="btnSend1" layoutX="415.0" layoutY="10.0" minWidth="-Infinity" onAction="#abtnSend" prefWidth="60.0" style="-fx-background-color: #2DFF1A;" text="Send" textFill="#f5efef" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="75.0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="lblusers" alignment="CENTER_RIGHT" layoutX="285.0" layoutY="42.0" minHeight="-Infinity" prefHeight="40.0" prefWidth="569.0" textFill="#eb3217" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="344.0" text="RUBICTRON private Chat" textFill="#2774e1" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

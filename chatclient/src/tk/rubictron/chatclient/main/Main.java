@@ -24,6 +24,9 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
        
         try {
+            
+//            System.setProperty("java.rmi.server.hostname", "10.42.0.2");
+
             Parent root = FXMLLoader.load(getClass().getResource("/tk/rubictron/chatclient/view/ui/DashBord.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setTitle("Chat");

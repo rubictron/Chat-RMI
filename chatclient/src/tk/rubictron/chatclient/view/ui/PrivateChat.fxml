@@ -18,10 +18,9 @@
             <JFXTextArea fx:id="txtaMessages" prefHeight="278.0" prefWidth="569.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" />
             <AnchorPane layoutY="344.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <children>
-                  <JFXTextField fx:id="txtfSendMessage" layoutY="2.0" prefHeight="24.0" prefWidth="385.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0" />
+                  <JFXTextField fx:id="txtfSendMessage" layoutY="2.0" prefHeight="24.0" prefWidth="385.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="80.0" />
                   <JFXButton fx:id="btnSend" layoutX="448.0" layoutY="13.0" minWidth="-Infinity" onAction="#abtnSend" prefWidth="60.0" style="-fx-background-color: ;" text="Send" textFill="#f5efef" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="70.0" />
-                  <JFXButton fx:id="btnExit" layoutX="499.0" layoutY="1.0" minWidth="-Infinity" onAction="#abtnExit" prefWidth="60.0" style="-fx-background-color: red;" text="Exit" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
-                  <JFXButton fx:id="btnSend1" layoutX="415.0" layoutY="10.0" minWidth="-Infinity" onAction="#abtnSend" prefWidth="60.0" style="-fx-background-color: #2DFF1A;" text="Send" textFill="#f5efef" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="75.0" />
+                  <JFXButton fx:id="btnSend1" layoutX="415.0" layoutY="10.0" minWidth="-Infinity" onAction="#abtnSend" prefWidth="60.0" style="-fx-background-color: #2DFF1A;" text="Send" textFill="#f5efef" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
                </children>
             </AnchorPane>
             <Label fx:id="lblusers" alignment="CENTER_RIGHT" layoutX="285.0" layoutY="42.0" minHeight="-Infinity" prefHeight="40.0" prefWidth="569.0" textFill="#eb3217" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />

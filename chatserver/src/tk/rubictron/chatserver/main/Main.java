@@ -24,7 +24,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
          try {
-             
+             System.setProperty("java.rmi.server.hostname", "192.168.8.100");
             Registry registry=LocateRegistry.createRegistry(6060);
             
              ServiceFactory factory=ServiceFactoryImpl.getInstance();

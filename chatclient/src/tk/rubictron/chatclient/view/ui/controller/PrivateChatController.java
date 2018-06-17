@@ -41,8 +41,6 @@ public class PrivateChatController implements Initializable, Observer {
     private JFXTextField txtfSendMessage;
     @FXML
     private JFXButton btnSend;
-    @FXML
-    private JFXButton btnExit;
 
     public String user1;
     public String user2;
@@ -51,6 +49,8 @@ public class PrivateChatController implements Initializable, Observer {
     private AnchorPane mainap;
     @FXML
     private Label lblusers;
+    @FXML
+    private JFXButton btnSend1;
 
     /**
      * Initializes the controller class.
@@ -68,6 +68,7 @@ public class PrivateChatController implements Initializable, Observer {
 
             service = (PrivatMessageService) ProxyHandler.getInstance().getService(ServiceFactory.ServiceType.PRIVATE);
             service.registerObserver(this);
+            update();
         } catch (RemoteException ex) {
             Logger.getLogger(PrivateChatController.class.getName()).log(Level.SEVERE, null, ex);
         } catch (Exception ex) {
@@ -87,13 +88,12 @@ public class PrivateChatController implements Initializable, Observer {
         }
     }
 
-    @FXML
     private void abtnExit(ActionEvent event) {
         
         
         try {
                             mainap.getChildren().clear();
-                            Parent loder= FXMLLoader.load(getClass().getResource("/tk/rubictron/chatclient/view/ui/PrivateChat.fxml"));
+                            Parent loder= FXMLLoader.load(getClass().getResource("/tk/rubictron/chatclient/view/ui/DashBord.fxml"));
                             mainap.getChildren().add(loder);
                         
                             

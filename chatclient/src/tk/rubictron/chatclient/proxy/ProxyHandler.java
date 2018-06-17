@@ -43,7 +43,7 @@ public class ProxyHandler implements ServiceFactory{
             serverSettings.load(reader);
             
             serviceFactory = (ServiceFactory) Naming.lookup("rmi://"+serverSettings.getProperty("ip")+":6060/chat");
-//            serviceFactory = (ServiceFactory) Naming.lookup("rmi://localhost:6060/chat");
+//            serviceFactory = (ServiceFactory) Naming.lookup("rmi://10.42.0.2:6060/chat");
             
             publicService =   (PublicMessageService) serviceFactory.getService(ServiceFactory.ServiceType.PUBLIC);
             

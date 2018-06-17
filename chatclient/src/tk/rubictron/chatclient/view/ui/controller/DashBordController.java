@@ -83,7 +83,9 @@ public class DashBordController implements Initializable, Observer {
     
     Timer timer;
     @FXML
-    private AnchorPane mainap;
+    private  AnchorPane mainap;
+    @FXML
+    private AnchorPane chatmain;
 
     /**
      * Initializes the controller class.
@@ -175,23 +177,25 @@ public class DashBordController implements Initializable, Observer {
 
                        
                         try {
-                            mainap.getChildren().clear();
+                            chatmain.getChildren().clear();
                             Parent loder= FXMLLoader.load(getClass().getResource("/tk/rubictron/chatclient/view/ui/PrivateChat.fxml"));
-                            mainap.getChildren().add(loder);
+                            chatmain.getChildren().add(loder);
                         
-                            
-                            
                             Node n = (Node) loder;
                             AnchorPane.setTopAnchor(n, 0.0);
                             AnchorPane.setRightAnchor(n, 0.0);
                             AnchorPane.setLeftAnchor(n, 0.0);
                             AnchorPane.setBottomAnchor(n, 0.0);
+                            
                         } catch (IOException ex) {
                             Logger.getLogger(DashBordController.class.getName()).log(Level.SEVERE, null, ex);
                         }
                  
 
                     }
+                    
+                    
+
 
                 }
 

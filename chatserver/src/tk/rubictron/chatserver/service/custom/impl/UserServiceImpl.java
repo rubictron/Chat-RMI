@@ -26,7 +26,7 @@ public class UserServiceImpl extends UnicastRemoteObject implements UserService 
 
     public UserServiceImpl() throws RemoteException {
         this.loginRepository = new LoginRepository();
-        users.add("public Chat");
+        users.add("public_Chat");
 
     }
 

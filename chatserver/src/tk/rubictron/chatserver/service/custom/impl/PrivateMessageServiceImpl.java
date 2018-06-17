@@ -78,7 +78,7 @@ public class PrivateMessageServiceImpl extends UnicastRemoteObject implements Pr
                 
             } else if (userHash.containsKey(user2 + user1)) {
                 
-                String msg = userHash.get(user2 + user1) + message;
+                String msg = userHash.get(user2 + user1) +"\n"+ message;
                 userHash.remove(user2 + user1);
                 userHash.put(user2 + user1, msg);
                 

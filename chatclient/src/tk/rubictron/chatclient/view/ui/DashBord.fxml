@@ -17,7 +17,7 @@
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
          <children>
-            <AnchorPane layoutX="15.0" layoutY="15.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane fx:id="chatmain" layoutX="15.0" layoutY="15.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
                <children>
                   <JFXTextArea fx:id="txtaMessages" editable="false" prefHeight="314.0" prefWidth="335.0" visible="false" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0" />
                   <JFXButton fx:id="btnSend" disable="true" layoutX="266.0" layoutY="333.0" onAction="#abtnSend" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #2DFF1A;" text="Send" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="5.0" />
@@ -28,7 +28,7 @@
             <JFXButton fx:id="btnLogOUT" disable="true" layoutX="397.0" layoutY="354.0" minWidth="-Infinity" onAction="#abtnLogOUT" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #FF571D;" text="Log out" AnchorPane.bottomAnchor="55.0" AnchorPane.rightAnchor="15.0" />
             <JFXButton fx:id="btnRegister" disable="true" layoutX="430.0" layoutY="348.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#abtnRegister" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: blue;" text="Register" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="15.0" />
             <Label fx:id="lblLog" alignment="CENTER" layoutX="447.0" layoutY="20.0" minWidth="-Infinity" onMouseClicked="#lblLogClick" prefHeight="24.0" prefWidth="125.0" style="-fx-background-color: #2DFF1A;" text="LOGIN" textFill="#1708ee" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0" />
-            <TableView fx:id="tblOnlineUser" disable="true" layoutX="373.0" layoutY="21.0" minWidth="-Infinity" opacity="0.84" prefHeight="265.0" prefWidth="125.0" AnchorPane.bottomAnchor="90.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="35.0">
+            <TableView fx:id="tblOnlineUser" disable="true" fixedCellSize="0.0" layoutX="373.0" layoutY="21.0" minWidth="-Infinity" opacity="0.84" prefHeight="265.0" prefWidth="125.0" AnchorPane.bottomAnchor="90.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="35.0">
               <columns>
                 <TableColumn editable="false" prefWidth="75.0" text="Online user" />
               </columns>

@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="chatserver.jar" size="12746" download="eager" />
+    <jar href="chatserver.jar" size="12814" download="eager" />
     <jar href="lib/chatcommon.jar" size="6608" download="eager" />
     <jar href="lib/mysql-connector-java-5.1.45-bin.jar" size="999810" download="eager" />
   </resources>
